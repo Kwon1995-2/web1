@@ -3,35 +3,50 @@
 <head>
   <title>Block Chain</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:green; 
-      text-decoration: none;
-    }
-    h1{
-      font-size: 40px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">Block Chain</a></h1>
+<div id="grid">
   <ol>
     <li><a href="1.html">Bitcoin</a></li>
     <li><a href="2.html">Ethereum</a></li>
     <li><a href="3.html">hyperledger</a></li>
   </ol>
 
-  <h2>Bitcoin</h2>
-
-
-  <p>
-  비트코인은 지폐나 동전과 달리 물리적인 형태가 없는 온라인 가상화폐(디지털 통화)다.
-  <br><br>
-  디지털 단위인 ‘비트(bit)’와 ‘동전(coin)’을 합친 용어다. <br>
-  나카모토 사토시라는 가명의 프로그래머가 빠르게 진전되는 온라인 추세에 맞춰 갈수록
-  기능이 떨어지는 달러화, 엔화, 원화 등과 같은 기존의 법화(法貨·legal tender)를
-  대신할 새로운 화폐를 만들겠다는 발상에서 2009년 비트코인을 처음 개발했다.
-  </p>
+  <div id="article">
+      <h2>Bitcoin</h2>
+      <p>
+        <h4>Ubuntu 20.04 Bitcoin Core install Process</h4>
+        <ul>
+          <li>mkdir src</li>
+          <li>cd src</li>
+          <li>git clone http://github.com/bitcoin/bitcoin.git</li>
+          <li>sudo apt-get update</li>
+          <li>sudo apt-get install build-essential automake pkg-config libevent-dev bsdmainutils</li>
+          <li>sudo apt-get install libtool autotools-dev autoconf</li>
+          <li>sudo apt-get install libssl-dev</li>
+          <li>sudo apt-get install libboost-all-dev</li>
+          <li>sudo add-apt-repository ppa:bitcoin/bitcon</li>
+          <li>sudo apt-get update</li>
+          <li>sudo apt-get upgrade</li>
+          <li>wget https://bitcoin.org/bin/bitcoin-core-0.20.0/bitcoin-0.20.0-x86_64-linux-gnu.tar.gz</li>
+          <li>tar -xvf bitcoin-0.20.0-x86_64-linux-gnu.tar.gz</li>
+          <li>sudo add-apt-repository ppa:luke-jr/bitcoincore</li>
+          <li>apt-get install bitcoin-qt</li>
+          <li>sudo apt-get install libdb4.8-dev</li>
+          <li>sudo apt-get install libdb4.8++-dev</li>
+          <li>sudo apt-get install libminiupnpc-dev</li>
+          <li>sudo apt-get install libqrencode-dev</li>
+          <li>sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler</li>
+          <li>cd bitcoin</li>
+          <li>./autogen.sh</li>
+          <li>./configure</li>
+          <li>make</li>
+          <li>sudo make install</li>
+        </ul>
+      </p>
+    </div>
+</div>
 </body>
 </html>
